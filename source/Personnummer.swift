@@ -36,31 +36,14 @@ public struct Personnummer {
 	public let day: Int
 	public let separator: Separator
 	public let fourLast: Int
-//	public let checkSum: Int
 	
 	
-//	public var isValid: Bool {
-////		let luhnString = "\(String(format: "%02i", year))\(String(format: "%02i", month))\(String(format: "%02i", day))\(String(format: "%03i", num))\(checkSum)"
-//		let luhnString = "\(String(format: "%02i", year))\(String(format: "%02i", month))\(String(format: "%02i", day))\(String(format: "%04i", fourLast))"
-//		var numbers = luhnString.reversed().map { Int(String($0))! }
-//		for (i, number) in numbers.enumerated() where i % 2 == 1 {
-//			let nr = number * 2
-//			numbers[i] = nr >= 10 ? nr - 9 : nr
-//		}
-//
-//		let sum = numbers.reduce(0, +)
-//		print(inputPersonnummer, luhnString, sum, sum % 10)
-//
-//		return sum % 10 == 0
-//	}
 	
 	public func format(longFormat: Bool = false) -> String {
 		if longFormat {
-//			return "\(String(format: "%02i", century))\(String(format: "%02i", year))\(String(format: "%02i", month))\(String(format: "%02i", day))\(String(format: "%03i", num))\(checkSum)"
 			return "\(String(format: "%02i", century))\(String(format: "%02i", year))\(String(format: "%02i", month))\(String(format: "%02i", day))\(String(format: "%04i", fourLast))"
 		}
 		else {
-//			return "\(String(format: "%02i", year))\(String(format: "%02i", month))\(String(format: "%02i", day))\(separator.rawValue)\(String(format: "%03i", num))\(checkSum)"
 			return "\(String(format: "%02i", year))\(String(format: "%02i", month))\(String(format: "%02i", day))\(separator.rawValue)\(String(format: "%04i", fourLast))"
 		}
 	}
@@ -68,7 +51,6 @@ public struct Personnummer {
 	
 	
 	public init?(personnummer: String) {
-//		let regexPattern = "^(\\d{2}){0,1}(\\d{2})(\\d{2})(\\d{2})([\\+\\-\\s]?)(\\d{3})(\\d)$"
 		let regexPattern = "^(\\d{2}){0,1}(\\d{2})(\\d{2})(\\d{2})([\\+\\-\\s]?)(\\d{4})$"
 		let regexer = try! NSRegularExpression.init(pattern: regexPattern, options: [.anchorsMatchLines])
 		guard let match = regexer.firstMatch(in: personnummer, options: [], range: NSRange(of: personnummer)) else {
@@ -81,7 +63,6 @@ public struct Personnummer {
 		guard 	let day: Int = Int(personnummer.substring(match.range(at: 4))) else { return nil}
 				var separator: Separator? = Separator(rawValue: personnummer.substring(match.range(at: 5)).first ?? "?")
 		guard	let fourLast: Int = Int(personnummer.substring(match.range(at: 6))) else { return nil }
-//		guard 	let checkSum: Int = Int(personnummer.substring(match.range(at: 7))) else { return nil}
 		
 		if separator == nil {
 			if century == nil || Int(Date().format("yyyy"))! - Int("\(century!)\(year)")! < 100 {
@@ -111,7 +92,6 @@ public struct Personnummer {
 			return nil
 		}
 		
-//		let luhnString = "\(String(format: "%02i", year))\(String(format: "%02i", month))\(String(format: "%02i", day))\(String(format: "%03i", num))\(checkSum)"
 		let luhnString = "\(String(format: "%02i", year))\(String(format: "%02i", month))\(String(format: "%02i", day))\(String(format: "%04i", fourLast))"
 		var numbers = luhnString.reversed().map { Int(String($0))! }
 		for (i, number) in numbers.enumerated() where i % 2 == 1 {
@@ -119,10 +99,7 @@ public struct Personnummer {
 			numbers[i] = nr >= 10 ? nr - 9 : nr
 		}
 		
-		let sum = numbers.reduce(0, +)
-//		print(inputPersonnummer, luhnString, sum, sum % 10)
-		
-		guard sum % 10 == 0 else {
+		guard numbers.reduce(0, +) % 10 == 0 else {
 			return nil
 		}
 		
@@ -133,7 +110,6 @@ public struct Personnummer {
 		self.day = day
 		self.separator = separator!
 		self.fourLast = fourLast
-//		self.checkSum = checkSum
 	}
 }
 
