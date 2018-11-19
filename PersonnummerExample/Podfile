@@ -1,0 +1,14 @@
+
+platform :ios, '10.0'
+
+target 'PersonnummerExample' do
+	use_frameworks!
+	
+	pod 'Personnummer', :path => '../'
+
+	target 'PersonnummerExampleTests' do
+		use_frameworks!
+		pod 'Personnummer', :path => '../'
+	end
+
+end
