@@ -6,7 +6,9 @@ Small library to validate and format swedish social security numbers called "Per
 
 ### Cocoapods
 	
-	pod 'Personnummer', '~> 1.0.0'
+```ruby	
+pod 'Personnummer', '~> 1.0.0'
+```
 	
 ## Usage
 
