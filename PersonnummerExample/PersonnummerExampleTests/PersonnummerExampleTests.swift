@@ -9,12 +9,7 @@
 import XCTest
 @testable import Personnummer
 
-
-
-
-
 class PersonnummerExampleTests: XCTestCase {
-
 	func testPersonnummerWithControlDigit() {
 		XCTAssertTrue(Personnummer.isValid("510818-9167"));
 		XCTAssertTrue(Personnummer.isValid("19900101-0017"));
@@ -23,15 +18,13 @@ class PersonnummerExampleTests: XCTestCase {
 		XCTAssertTrue(Personnummer.isValid("0001010107"));
 		XCTAssertTrue(Personnummer.isValid("000101-0107"));
 	}
-	
-	
+
 	func testPersonnummerWithoutControlDigit() {
 		XCTAssertFalse(Personnummer.isValid("510818-916"));
 		XCTAssertFalse(Personnummer.isValid("19900101-001"));
 		XCTAssertFalse(Personnummer.isValid("100101+001"));
 	}
-	
-	
+
 	func testPersonnummerWithWrongFormats() {
 		XCTAssertFalse(Personnummer.isValid("112233-4455"));
 		XCTAssertFalse(Personnummer.isValid("19112233-4455"));
@@ -50,14 +43,12 @@ class PersonnummerExampleTests: XCTestCase {
 		XCTAssertFalse(Personnummer.isValid("000Ö01-0A07"));
 		XCTAssertFalse(Personnummer.isValid("000ÖBB_01-AAA07"));
 	}
-	
-	
+
 	func testCoOrdinationNumbers() {
 		XCTAssertTrue(Personnummer.isValid("701063-2391"));
 		XCTAssertTrue(Personnummer.isValid("640883-3231"));
 	}
-	
-	
+
 	func testWrongCoOrdinationNumbers() {
 		XCTAssertFalse(Personnummer.isValid("900161-0017"));
 		XCTAssertFalse(Personnummer.isValid("640893-3231"));
@@ -65,8 +56,7 @@ class PersonnummerExampleTests: XCTestCase {
 		XCTAssertFalse(Personnummer.isValid("19640893-3231"));
 		XCTAssertFalse(Personnummer.isValid("196408933231"));
 	}
-	
-	
+
 	func testFormat() {
 		XCTAssertEqual("510818-9167", Personnummer.format("510818-9167"));
 		XCTAssertEqual("900101-0017", Personnummer.format("19900101-0017"));

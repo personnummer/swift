@@ -13,8 +13,7 @@ class ViewController: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		
-		
+
 		if let p = Personnummer(personnummer: "510818-9167") {
 			print(p.century, p.year, p.month, p.day, p.separator.rawValue, p.fourLast)
 			print(p.format(longFormat: true))
@@ -24,7 +23,4 @@ class ViewController: UIViewController {
 			print("Not valid")
 		}
 	}
-
-
 }
-
