@@ -270,17 +270,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PersonnummerExample/Pods-PersonnummerExample-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Personnummer/Personnummer.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PersonnummerExample/Pods-PersonnummerExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Personnummer.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PersonnummerExample/Pods-PersonnummerExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PersonnummerExample/Pods-PersonnummerExample-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PersonnummerExample/Pods-PersonnummerExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FE1EE98BB9C3265A5B3210BB /* [CP] Embed Pods Frameworks */ = {
@@ -288,17 +287,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PersonnummerExample-PersonnummerExampleTests/Pods-PersonnummerExample-PersonnummerExampleTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Personnummer/Personnummer.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PersonnummerExample-PersonnummerExampleTests/Pods-PersonnummerExample-PersonnummerExampleTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Personnummer.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PersonnummerExample-PersonnummerExampleTests/Pods-PersonnummerExample-PersonnummerExampleTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PersonnummerExample-PersonnummerExampleTests/Pods-PersonnummerExample-PersonnummerExampleTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PersonnummerExample-PersonnummerExampleTests/Pods-PersonnummerExample-PersonnummerExampleTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -475,7 +473,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75KSZL4H3E;
 				INFOPLIST_FILE = PersonnummerExample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = se.arbitur.PersonnummerExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -491,7 +492,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75KSZL4H3E;
 				INFOPLIST_FILE = PersonnummerExample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = se.arbitur.PersonnummerExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -508,7 +512,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75KSZL4H3E;
 				INFOPLIST_FILE = PersonnummerExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = se.arbitur.PersonnummerExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -526,7 +534,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75KSZL4H3E;
 				INFOPLIST_FILE = PersonnummerExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = se.arbitur.PersonnummerExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
