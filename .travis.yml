@@ -4,3 +4,6 @@ xcode_project: PersonnummerExample/PersonnummerExample.xcodeproj # path to your 
 xcode_scheme: PersonnummerExample
 xcode_destination: platform=iOS Simulator,OS=13.2,name=iPhone 11
 podfile: PersonnummerExample/Podfile
+
+before_install:
+- pod install --project-directory=PersonnummerExample
