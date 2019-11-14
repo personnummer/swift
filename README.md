@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/GoranLilja/personnummer-swift.svg?branch=master)](https://travis-ci.org/GoranLilja/personnummer-swift)
+[![Build Status](https://travis-ci.org/personnummer/swift.svg?branch=master)](https://travis-ci.org/personnummer/swift)
 
 # Personnummer swift
 
