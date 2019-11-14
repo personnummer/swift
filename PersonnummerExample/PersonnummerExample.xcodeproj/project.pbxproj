@@ -3,18 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		39EA7A108F69746A3CA54EA9 /* Pods_PersonnummerExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6109A6AC512184D1B98CB30D /* Pods_PersonnummerExample.framework */; };
+		43D923BAF76520D0ABD5C87D /* Pods_PersonnummerExample_PersonnummerExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D36D2888CF7D4107168B707 /* Pods_PersonnummerExample_PersonnummerExampleTests.framework */; };
+		561AFC46976D59F62366A313 /* Pods_PersonnummerExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EF31F8C47842AA6AA1A86AD /* Pods_PersonnummerExample.framework */; };
 		7F74F29A21A03E97003818B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F74F29921A03E97003818B6 /* AppDelegate.swift */; };
 		7F74F29C21A03E97003818B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F74F29B21A03E97003818B6 /* ViewController.swift */; };
 		7F74F29F21A03E97003818B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F74F29D21A03E97003818B6 /* Main.storyboard */; };
 		7F74F2A121A03E97003818B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F74F2A021A03E97003818B6 /* Assets.xcassets */; };
 		7F74F2A421A03E97003818B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F74F2A221A03E97003818B6 /* LaunchScreen.storyboard */; };
 		7F74F2AF21A03E97003818B6 /* PersonnummerExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F74F2AE21A03E97003818B6 /* PersonnummerExampleTests.swift */; };
-		915494FA3A67F6D3FA0E7A79 /* Pods_PersonnummerExample_PersonnummerExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17491EC2C4D73A901EDE9B5D /* Pods_PersonnummerExample_PersonnummerExampleTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,11 +28,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		17491EC2C4D73A901EDE9B5D /* Pods_PersonnummerExample_PersonnummerExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PersonnummerExample_PersonnummerExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D36D2888CF7D4107168B707 /* Pods_PersonnummerExample_PersonnummerExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PersonnummerExample_PersonnummerExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26DF229D2BC2A9CAD9C06D64 /* Pods-PersonnummerExample-PersonnummerExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonnummerExample-PersonnummerExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PersonnummerExample-PersonnummerExampleTests/Pods-PersonnummerExample-PersonnummerExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		375141C1B71A6CC1DFA88038 /* Pods-PersonnummerExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonnummerExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PersonnummerExampleTests/Pods-PersonnummerExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4AA08B7BFB88EF00409C702D /* Pods-PersonnummerExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonnummerExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-PersonnummerExample/Pods-PersonnummerExample.release.xcconfig"; sourceTree = "<group>"; };
 		5530690AC90195C6F2E2CB50 /* Pods-PersonnummerExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonnummerExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PersonnummerExample/Pods-PersonnummerExample.debug.xcconfig"; sourceTree = "<group>"; };
-		6109A6AC512184D1B98CB30D /* Pods_PersonnummerExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PersonnummerExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7432B3018D6A8902A6F98DE7 /* Pods-PersonnummerExample-PersonnummerExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonnummerExample-PersonnummerExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PersonnummerExample-PersonnummerExampleTests/Pods-PersonnummerExample-PersonnummerExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		7F74F29621A03E96003818B6 /* PersonnummerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonnummerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F74F29921A03E97003818B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +44,8 @@
 		7F74F2AA21A03E97003818B6 /* PersonnummerExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersonnummerExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F74F2AE21A03E97003818B6 /* PersonnummerExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonnummerExampleTests.swift; sourceTree = "<group>"; };
 		7F74F2B021A03E97003818B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EF31F8C47842AA6AA1A86AD /* Pods_PersonnummerExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PersonnummerExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFDED699623971A7458EDEB8 /* Pods-PersonnummerExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonnummerExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PersonnummerExampleTests/Pods-PersonnummerExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39EA7A108F69746A3CA54EA9 /* Pods_PersonnummerExample.framework in Frameworks */,
+				561AFC46976D59F62366A313 /* Pods_PersonnummerExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				915494FA3A67F6D3FA0E7A79 /* Pods_PersonnummerExample_PersonnummerExampleTests.framework in Frameworks */,
+				43D923BAF76520D0ABD5C87D /* Pods_PersonnummerExample_PersonnummerExampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +117,8 @@
 				4AA08B7BFB88EF00409C702D /* Pods-PersonnummerExample.release.xcconfig */,
 				26DF229D2BC2A9CAD9C06D64 /* Pods-PersonnummerExample-PersonnummerExampleTests.debug.xcconfig */,
 				7432B3018D6A8902A6F98DE7 /* Pods-PersonnummerExample-PersonnummerExampleTests.release.xcconfig */,
+				375141C1B71A6CC1DFA88038 /* Pods-PersonnummerExampleTests.debug.xcconfig */,
+				EFDED699623971A7458EDEB8 /* Pods-PersonnummerExampleTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -122,8 +126,8 @@
 		CC58CD3BE8BE7B8EFA99096D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6109A6AC512184D1B98CB30D /* Pods_PersonnummerExample.framework */,
-				17491EC2C4D73A901EDE9B5D /* Pods_PersonnummerExample_PersonnummerExampleTests.framework */,
+				9EF31F8C47842AA6AA1A86AD /* Pods_PersonnummerExample.framework */,
+				0D36D2888CF7D4107168B707 /* Pods_PersonnummerExample_PersonnummerExampleTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -139,7 +143,7 @@
 				7F74F29221A03E96003818B6 /* Sources */,
 				7F74F29321A03E96003818B6 /* Frameworks */,
 				7F74F29421A03E96003818B6 /* Resources */,
-				D01257AD53B4EDE8E156D360 /* [CP] Embed Pods Frameworks */,
+				BBB7C45AEF51CCDD1066497B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -158,7 +162,7 @@
 				7F74F2A621A03E97003818B6 /* Sources */,
 				7F74F2A721A03E97003818B6 /* Frameworks */,
 				7F74F2A821A03E97003818B6 /* Resources */,
-				FE1EE98BB9C3265A5B3210BB /* [CP] Embed Pods Frameworks */,
+				602F3A804BD4DE7117C74808 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -247,6 +251,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		602F3A804BD4DE7117C74808 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PersonnummerExample-PersonnummerExampleTests/Pods-PersonnummerExample-PersonnummerExampleTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PersonnummerExample-PersonnummerExampleTests/Pods-PersonnummerExample-PersonnummerExampleTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PersonnummerExample-PersonnummerExampleTests/Pods-PersonnummerExample-PersonnummerExampleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7A32F64295609A1AD0F5C663 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -265,40 +286,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D01257AD53B4EDE8E156D360 /* [CP] Embed Pods Frameworks */ = {
+		BBB7C45AEF51CCDD1066497B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PersonnummerExample/Pods-PersonnummerExample-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Personnummer/Personnummer.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PersonnummerExample/Pods-PersonnummerExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Personnummer.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PersonnummerExample/Pods-PersonnummerExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PersonnummerExample/Pods-PersonnummerExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FE1EE98BB9C3265A5B3210BB /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PersonnummerExample-PersonnummerExampleTests/Pods-PersonnummerExample-PersonnummerExampleTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Personnummer/Personnummer.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Personnummer.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PersonnummerExample-PersonnummerExampleTests/Pods-PersonnummerExample-PersonnummerExampleTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PersonnummerExample/Pods-PersonnummerExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -473,10 +475,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 75KSZL4H3E;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PersonnummerExample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = se.arbitur.PersonnummerExample;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.personnummer.example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -489,10 +494,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 75KSZL4H3E;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PersonnummerExample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = se.arbitur.PersonnummerExample;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.personnummer.example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -505,11 +513,16 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 75KSZL4H3E;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PersonnummerExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = se.arbitur.PersonnummerExampleTests;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.personnummer.exampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -523,11 +536,16 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 75KSZL4H3E;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PersonnummerExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = se.arbitur.PersonnummerExampleTests;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.personnummer.exampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/personnummer/swift.svg?branch=master)](https://travis-ci.org/personnummer/swift)
+
 # Personnummer swift
 
 Small library to validate and format swedish social security numbers called "Personnummer".
