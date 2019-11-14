@@ -1,6 +1,6 @@
 language: objective-c
 osx_image: xcode11.2
-xcode_project: PersonnummerExample/PersonnummerExample.xcodeproj # path to your xcodeproj folder
+xcode_workspace: PersonnummerExample/PersonnummerExample.xcworkspace # path to your xcodeproj folder
 xcode_scheme: PersonnummerExample
 xcode_destination: platform=iOS Simulator,OS=13.2,name=iPhone 11
 podfile: PersonnummerExample/Podfile
