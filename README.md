@@ -4,14 +4,14 @@
 
 Small library to validate and format swedish social security numbers called "Personnummer".
 
-## Installation 
+## Installation
 
 ### Cocoapods
-	
-```ruby	
+
+```ruby
 pod 'Personnummer', '~> 1.0.0'
 ```
-	
+
 ## Usage
 
 ```swift
