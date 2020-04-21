@@ -2,7 +2,7 @@
 
 # Personnummer swift
 
-Small library to validate and format swedish social security numbers called "Personnummer".
+Small library to validate and format swedish personal identity numbers called "Personnummer".
 
 ## Installation
 
