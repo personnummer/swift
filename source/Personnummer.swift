@@ -108,7 +108,7 @@ public struct Personnummer {
 		- Returns: Returns ´Personnummer´ if `personnummer` is valid and ´nil´ if invalid.
 	*/
 	public init?(personnummer: String) {
-		let regexPattern = "^(\\d{2}){0,1}(\\d{2})(\\d{2})(\\d{2})([\\+\\-\\s]?)(\\d{4})$"
+		let regexPattern = "^(\\d{2}){0,1}(\\d{2})(\\d{2})(\\d{2})([\\+\\-\\s]?)((?!000)\\d{4})$"
 		let regexer = try! NSRegularExpression.init(pattern: regexPattern, options: [.anchorsMatchLines])
 		guard let match = regexer.firstMatch(in: personnummer, options: [], range: NSRange(of: personnummer)) else {
 			return nil
