@@ -34,6 +34,7 @@ class PersonnummerExampleTests: XCTestCase {
 		XCTAssertFalse(Personnummer.isValid("Just a string"));
 		XCTAssertFalse(Personnummer.isValid("000Ö01-0A07"));
 		XCTAssertFalse(Personnummer.isValid("000ÖBB_01-AAA07"));
+		XCTAssertFalse(Personnummer.isValid("201509160006"))
 	}
 
 	func testCoOrdinationNumbers() {
