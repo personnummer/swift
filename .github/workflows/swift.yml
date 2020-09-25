@@ -1,0 +1,28 @@
+name: build
+
+on:
+  push:
+    branches:
+      - master
+
+  # Run tests for any PRs.
+  pull_request:
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    strategy:
+      matrix:
+        destination: ["platform=iOS Simulator,OS=13.2.2,name=iPhone 11"]
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: CocoaPod Install
+        run: pod install --project-directory=PersonnummerExample
+      - name: Build and test
+        run: |
+          cd PersonnummerExample
+          xcodebuild clean test -project PersonnummerExample.xcodeproj -scheme PersonnummerExample -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+        env:
+          destination: ${{ matrix.destination }}
