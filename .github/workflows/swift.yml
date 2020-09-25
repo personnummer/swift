@@ -19,10 +19,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: CocoaPod Install
-        run: pod install --project-directory=PersonnummerExample
+        run: |
+          cd PersonnummerExample
+          pod install
       - name: Build and test
         run: |
           cd PersonnummerExample
-          xcodebuild clean test -project PersonnummerExample.xcodeproj -scheme PersonnummerExample -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+          xcodebuild clean test -workspace PersonnummerExample.xcworkspace -scheme PersonnummerExample -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
         env:
           destination: ${{ matrix.destination }}
