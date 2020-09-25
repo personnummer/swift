@@ -1,6 +1,4 @@
-[![Build Status](https://travis-ci.org/personnummer/swift.svg?branch=master)](https://travis-ci.org/personnummer/swift)
-
-# Personnummer swift
+# Personnummer [![Build Status](https://github.com/personnummer/swift/workflows/build/badge.svg)](https://github.com/personnummer/swift/actions)
 
 Small library to validate and format swedish personal identity numbers called "Personnummer".
 

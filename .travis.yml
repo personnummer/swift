@@ -1,9 +1,0 @@
-language: objective-c
-osx_image: xcode11.2
-xcode_workspace: PersonnummerExample/PersonnummerExample.xcworkspace # path to your xcodeproj folder
-xcode_scheme: PersonnummerExample
-xcode_destination: platform=iOS Simulator,OS=13.2.2,name=iPhone 11
-podfile: PersonnummerExample/Podfile
-
-before_install:
-- pod install --project-directory=PersonnummerExample
