@@ -16,6 +16,7 @@ class PersonnummerExampleTests: XCTestCase {
 		XCTAssertTrue(Personnummer.isValid("198507099813"));
 		XCTAssertTrue(Personnummer.isValid("850709-9813"));
 		XCTAssertTrue(Personnummer.isValid("196411139808"));
+		XCTAssertFalse(Personnummer.isValid("19641113 9808"));
 	}
 
 	func testPersonnummerWithoutControlDigit() {
