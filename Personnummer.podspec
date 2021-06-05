@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 	s.name 		= 'Personnummer'
-	s.version 	= '1.0.1'
+	s.version 	= '1.0.2'
 	s.author 	= { 'Arbitur' => 'arbiturr@gmail.com' }
 	s.license 	= { :type => 'MIT', :file => 'LICENSE' }
 	s.homepage 	= 'https://github.com/personnummer/swift.git'
