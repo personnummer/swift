@@ -1,4 +1,4 @@
-name: "Ruby"
+name: "Swift"
 maintainer: "@GoranLilja"
 spec: 1
 workflow: "swift.yml"
