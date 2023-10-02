@@ -10,6 +10,12 @@ Small library to validate and format swedish personal identity numbers called "P
 pod 'Personnummer', '~> 1.0.0'
 ```
 
+### Swift Package Manager
+
+```swift
+.package(url: "https://github.com/personnummer/swift.git", from: "1.0.2")
+```
+
 ## Usage
 
 ```swift
