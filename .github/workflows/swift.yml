@@ -5,28 +5,43 @@ on:
     branches:
       - master
 
-  # Run tests for any PRs.
   pull_request:
 
 jobs:
   build:
-    runs-on: macos-latest
-
-    strategy:
-      matrix:
-        destination: ["platform=iOS Simulator,OS=18.2,name=iPhone 16"]
+    runs-on: macos-14
 
     steps:
-      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5
-      - name: Test as package
+      - uses: actions/checkout@v5
+
+      - name: Find latest iOS Simulator destination (iPhone + iOS)
+        id: destination
+        run: |
+          # Get the latest available iOS runtime (e.g., iOS 18.2)
+          runtime=$(xcrun simctl list runtimes | grep -E "iOS [0-9]+\.[0-9]+" | grep -v unavailable | sort -rV | head -n 1)
+          ios_version=$(echo "$runtime" | grep -oE "[0-9]+\.[0-9]+")
+          echo "Latest iOS version: $ios_version"
+
+          # Find latest available iPhone device supporting this runtime
+          device=$(xcrun simctl list devices | grep -E "iPhone [0-9]+" | grep "iOS $ios_version" | grep -v unavailable | sort -rV | head -n 1 | cut -d '(' -f 1 | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+          echo "Selected device: $device"
+
+          # Output final destination string for xcodebuild
+          echo "destination=platform=iOS Simulator,OS=$ios_version,name=$device" >> $GITHUB_OUTPUT
+
+      - name: Run Swift package tests
         run: swift test
-      - name: CocoaPod Install
+
+      - name: Install CocoaPods dependencies
         run: |
           cd PersonnummerExample
           pod install
-      - name: Build and test
+
+      - name: Build and test iOS project
         run: |
           cd PersonnummerExample
-          xcodebuild clean test -workspace PersonnummerExample.xcworkspace -scheme PersonnummerExample -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
-        env:
-          destination: ${{ matrix.destination }}
+          xcodebuild clean test \
+            -workspace PersonnummerExample.xcworkspace \
+            -scheme PersonnummerExample \
+            -destination "${{ steps.destination.outputs.destination }}" \
+            CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
