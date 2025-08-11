@@ -17,7 +17,7 @@ jobs:
         destination: ["platform=iOS Simulator,OS=16.2,name=iPhone 13"]
 
     steps:
-      - uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4
+      - uses: actions/checkout@08eba0b27e820071cde6df949e0beb9ba4906955 # v4
       - name: Test as package
         run: swift test
       - name: CocoaPod Install
