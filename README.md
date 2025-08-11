@@ -4,16 +4,19 @@ Small library to validate and format swedish personal identity numbers called "P
 
 ## Installation
 
-### Cocoapods
-
-```ruby
-pod 'Personnummer', '~> 1.0.0'
-```
-
 ### Swift Package Manager
 
 ```swift
 .package(url: "https://github.com/personnummer/swift.git", from: "1.0.2")
+```
+
+### Cocoapods (Legacy)
+
+**Note:** CocoaPods is no longer actively maintained for this package.
+Swift Package Manager is the recommended installation method.
+
+```ruby
+pod 'Personnummer', '~> 1.0.0'
 ```
 
 ## Usage
