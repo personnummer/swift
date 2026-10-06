@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 	s.author 	= { 'Arbitur' => 'arbiturr@gmail.com' }
 	s.license 	= { :type => 'MIT', :file => 'LICENSE' }
 	s.homepage 	= 'https://github.com/personnummer/swift.git'
-	s.source 	= { :git => s.homepage, :tag => s.version, :branch => 'master' }
+	s.source 	= { :git => s.homepage, :tag => s.version }
 	s.summary 	= 'Validate and format Swedish personal identity numbers'
 
 	s.platform = :ios, '10.0'
