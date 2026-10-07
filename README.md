@@ -64,6 +64,10 @@ Version 3 is not compatible with 1.x:
 - The static `Personnummer.format(_:longFormat:)` is removed, use `try Personnummer.parse(s).format()`.
 - Components are strings: `separator` is now `sep`, `fourLast` is split into `num` and `check`.
 
+## Example app
+
+`PersonnummerExample/PersonnummerExample.xcodeproj` is a SwiftUI app that uses the package from this repository. Open it in Xcode and run it in a simulator.
+
 ## In memoriam
 
 Fredrik "Frozzare" Forsmo (1991-2026) was the initiator, co-founder and a core contributor of the personnummer project. This library carries his work. He is missed.

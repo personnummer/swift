@@ -21,7 +21,7 @@ private func loadTestdata(_ name: String) throws -> [TestItem] {
 	return try JSONDecoder().decode([TestItem].self, from: Data(contentsOf: url))
 }
 
-class PersonnummerExampleTests: XCTestCase {
+class PersonnummerTests: XCTestCase {
 	private static var list: [TestItem] = []
 	private static var interim: [TestItem] = []
 
