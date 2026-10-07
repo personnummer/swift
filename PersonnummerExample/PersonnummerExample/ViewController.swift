@@ -14,8 +14,8 @@ class ViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
-		if let p = Personnummer(personnummer: "8507099805") {
-			print(p.century, p.year, p.month, p.day, p.separator.rawValue, p.fourLast)
+		if let p = try? Personnummer.parse("8507099805") {
+			print(p.century, p.year, p.month, p.day, p.sep, p.num, p.check)
 			print(p.format(longFormat: true))
 			print(p.format(longFormat: false))
 		}

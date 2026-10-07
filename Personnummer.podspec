@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 	s.name 		= 'Personnummer'
-	s.version 	= '1.0.2'
+	s.version 	= '3.0.0'
 	s.author 	= { 'Arbitur' => 'arbiturr@gmail.com' }
 	s.license 	= { :type => 'MIT', :file => 'LICENSE' }
 	s.homepage 	= 'https://github.com/personnummer/swift.git'
@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
 	s.summary 	= 'Validate and format Swedish personal identity numbers'
 
 	s.platform = :ios, '10.0'
-	s.swift_version = '4.2'
+	s.swift_version = '5.6'
 
 	s.frameworks = 'Foundation'
 	s.source_files = 'source/*.swift'
