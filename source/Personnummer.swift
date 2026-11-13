@@ -44,7 +44,7 @@ public struct Personnummer {
 
 	private static let interimLetters = "TRSUWXJKLMN"
 	private static let regex = try! NSRegularExpression(
-		pattern: "^(\\d{2})?(\\d{2})(\\d{2})(\\d{2})([+-]?)((?!000)\\d{3}|[\(interimLetters)]\\d{2})(\\d)$"
+		pattern: "^([0-9]{2})?([0-9]{2})([0-9]{2})([0-9]{2})([+-]?)((?!000)[0-9]{3}|[\(interimLetters)][0-9]{2})([0-9])\\z"
 	)
 	private static let calendar: Calendar = {
 		var calendar = Calendar(identifier: .gregorian)
