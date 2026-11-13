@@ -16,3 +16,5 @@ jobs:
 
       - name: Run Swift package tests
         run: swift test
+      - name: Build example app
+        run: xcodebuild -project PersonnummerExample/PersonnummerExample.xcodeproj -scheme PersonnummerExample -destination 'generic/platform=iOS Simulator' build

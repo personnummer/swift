@@ -16,8 +16,7 @@ let package = Package(
         .testTarget(
             name: "PersonnummerTests",
             dependencies: ["Personnummer"],
-            path: "PersonnummerExample/PersonnummerExampleTests",
-            exclude: ["Info.plist"]
+            path: "Tests/PersonnummerTests"
         ),
     ]
 )

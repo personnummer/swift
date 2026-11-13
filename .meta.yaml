@@ -1,4 +1,4 @@
 name: "Swift"
 maintainer: "@GoranLilja"
-spec: 1
+spec: 3.1
 workflow: "swift.yml"
