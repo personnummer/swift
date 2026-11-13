@@ -114,4 +114,37 @@ class PersonnummerTests: XCTestCase {
 			}
 		}
 	}
+
+	func testRejectsNonASCIIDigits() {
+		// Zero of each block: Arabic-Indic (U+0660) and fullwidth (U+FF10).
+		let zeros: [Unicode.Scalar] = ["\u{0660}", "\u{FF10}"]
+		for ascii in ["1212121212", "191212121212"] {
+			XCTAssertTrue(Personnummer.valid(ascii), ascii)
+			for zero in zeros {
+				assertInvalid(digits(ascii, zero: zero))
+			}
+		}
+	}
+
+	func testRejectsTrailingNewline() {
+		XCTAssertTrue(Personnummer.valid("9001010017"))
+		assertInvalid("9001010017\n")
+	}
+
+	/// Rewrites the ASCII digits in `ascii` as the digits of the Unicode block starting at `zero`.
+	private func digits(_ ascii: String, zero: Unicode.Scalar) -> String {
+		String(String.UnicodeScalarView(ascii.unicodeScalars.map {
+			Unicode.Scalar(zero.value + $0.value - 0x30)!
+		}))
+	}
+
+	private func assertInvalid(_ input: String, file: StaticString = #filePath, line: UInt = #line) {
+		for options in [Personnummer.Options(), Personnummer.Options(allowInterimNumber: true)] {
+			let message = "\(input.debugDescription) allowInterimNumber: \(options.allowInterimNumber)"
+			XCTAssertFalse(Personnummer.valid(input, options: options), message, file: file, line: line)
+			XCTAssertThrowsError(try Personnummer.parse(input, options: options), message, file: file, line: line) {
+				XCTAssertTrue($0 is PersonnummerError, message, file: file, line: line)
+			}
+		}
+	}
 }
